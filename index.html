@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Leyte</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo"><h1>Weather Leyte</h1></div>
+      <ul>
+        <li>
+          <a
+            href="https://education.nationalgeographic.org/resource/weather/"
+            target="_blank"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="https://www.pagasa.dost.gov.ph/weather" target="_blank"
+            >Weather Ph</a
+          >
+        </li>
+        <li>
+          <a href="https://openweathermap.org/api" target="_blank"
+            >Learn More Weather API</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="Choosecity">
+      <h1>Weather City</h1>
+      <select id="citySelect">
+        <option disabled selected>City</option>
+        <option value="Ormoc">Ormoc City</option>
+        <option value="Baybay">Baybay City</option>
+        <option value="Leyte">Leyte</option>
+        <option value="Tacloban">Tacloban City</option>
+        <option value="Palompon">Palompon City</option>
+      </select>
+
+      <div class="result">
+        <main>
+          <section class="location">
+            <div class="city">City, Country</div>
+            <div class="date">Date</div>
+          </section>
+          <div class="current">
+            <div class="temp">--<span>°c</span></div>
+            <div class="weather">--</div>
+            <div class="hi-low">--°c / --°c</div>
+          </div>
+          <div class="error-message" style="color: red; display: none">
+            City not found. Please try again.
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer>
+      <p>No &copy; by Pedrito M. Parrilla III</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

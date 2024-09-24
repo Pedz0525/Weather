@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: #a7d4e3;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #a7d4e3;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 1.3rem;
+}
+
+.logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+  list-style: none;
+  width: 30%;
+  justify-content: space-evenly;
+}
+li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0);
+}
+
+.Choosecity {
+  width: 50%;
+  height: 500px;
+  opacity: 90%;
+  margin-top: 100px;
+  position: relative;
+  left: 25%;
+  bottom: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 35px 15px;
+}
+
+.result {
+  width: 400px;
+  background-color: #a7d4e3;
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location .city {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  color: #000000;
+  font-size: 20px;
+}
+
+.current .temp {
+  color: #070707;
+  font-size: 102px;
+  font-weight: 900;
+  margin: 30px 0px;
+  text-shadow: 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+
+.current .weather {
+  color: #000000;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.current .hi-low {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+#citySelect {
+  appearance: none;
+  background-color: #f1f1f1;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#citySelect:focus {
+  border-color: #007bff;
+}
+
+#citySelect::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+#citySelect:hover {
+  border-color: #007bff;
+}
+
+#citySelect option {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+}
+
+body.clouds {
+  background-image: url("clooudy.jpg");
+  background-size: cover;
+}
+
+body.rain {
+  background-image: url("rainy.jpg");
+  background-size: cover;
+}
+
+body.sunny {
+  background-image: url("Sunny.jpg");
+  background-size: cover;
+}
+
+/* Default style */
+body {
+  background-image: url(default.jpg);
+  background-size: cover;
+}
